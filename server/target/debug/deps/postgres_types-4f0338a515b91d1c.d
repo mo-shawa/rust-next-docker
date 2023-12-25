@@ -1,9 +1,0 @@
-/Users/mahmoudelshawa/code/learn/fullstack-rust/server/target/debug/deps/libpostgres_types-4f0338a515b91d1c.rmeta: /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/lib.rs /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/pg_lsn.rs /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/private.rs /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/special.rs /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/type_gen.rs
-
-/Users/mahmoudelshawa/code/learn/fullstack-rust/server/target/debug/deps/postgres_types-4f0338a515b91d1c.d: /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/lib.rs /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/pg_lsn.rs /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/private.rs /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/special.rs /Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/type_gen.rs
-
-/Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/lib.rs:
-/Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/pg_lsn.rs:
-/Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/private.rs:
-/Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/special.rs:
-/Users/mahmoudelshawa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/postgres-types-0.2.6/src/type_gen.rs:
