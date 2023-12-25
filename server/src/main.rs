@@ -120,3 +120,40 @@ fn handle_post_request(request: &str) -> (String, String) {
             _ => return (INTERNAL_SERVER_ERROR_RESPONSE.to_string(), "Internal server error".to_string()),
         }
     }
+
+fn handle_get_request(request: &str) -> (String, String) {
+    match (get_id(&request).parse::<i32>(), Client::connect(DB_URL, NoTls)){
+            (Ok(user_id), Ok(mut client)) => {
+                match client.query_one("SELECT * FROM users WHERE id = $1", &[&user_id]){
+                    Ok(row) => {
+                        let user = User {
+                            id: row.get(0),
+                            name: row.get(1),
+                            email: row.get(2),
+                        };
+                        return (OK_RESPONSE.to_string(), serde_json::to_string(&user).unwrap())
+                        }
+                        _ => return (NOT_FOUND_RESPONSE.to_string(), "No users found".to_string()),
+                    }
+                }
+                _ => return (INTERNAL_SERVER_ERROR_RESPONSE.to_string(), "Internal server error".to_string()),
+            }
+    }
+
+fn handle_get_all_request(request: &str) -> (String, String){
+    match Client::connect(DB_URL, NoTls){
+        Ok(mut client) => {
+            let mut users: Vec<User> = Vec::new();
+            for row in client.query("SELECT * FROM users", &[]).unwrap() {
+                users.push(User {
+                    id: row.get(0),
+                    name: row.get(1),
+                    email: row.get(2),
+                });
+            };
+            return (OK_RESPONSE.to_string(), serde_json::to_string(&users).unwrap())
+        }
+        _ => return (INTERNAL_SERVER_ERROR_RESPONSE.to_string(), "Error fetching users".to_string())
+    }
+}
+
